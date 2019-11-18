@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="app">
+		<div class="app__header">
+			<h1 class="app__header_title visually-hidden">Игра</h1>
+			<h2 id="time-header">Время игры: <span id="time">5.0</span></h2>
+			<h2 id="result-header" class="app__header_result hide">Ваш результат: <span id="result"></span></h2>
+		</div>
+		<div class="app__content">
+			<button id="start" class="btn">Начать</button>
+			<div id="game" class="game">
+				
+			</div>
+		</div>
+		<div class="app__footer">
+			<div class="input">
+				<label for="game-time">Время игры, (сек)</label>
+				<input id="game-time" type="number" name="game-time" min="5" step="1" value="5">
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
